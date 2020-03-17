@@ -43,6 +43,7 @@ nav{
 
 .nav-links li {
      font-weight: 400;
+     cursor: pointer;
 }
 
 .landing-text-content{
@@ -70,6 +71,31 @@ nav{
     width:280px;
     height:5px;
     background-color: #F33F6A;
+}
+
+.social{
+    padding-top:10%;
+    min-height: 20%;
+    display: flex;
+    width:60%;
+    justify-content:space-between;
+}
+
+.social div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social div span{
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.social div i{
+    font-size: 4.2rem;
 }
 
 .my-wall {
@@ -161,11 +187,18 @@ nav{
     word-wrap: break-word;
 }
 
+
+
 @media(max-width:900px) {
 
+body {
+    overflow-x: hidden;
+}
 .hamburger {
+    padding: 10px;
     min-height:30px;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -205,6 +238,147 @@ nav{
 .showNav{
     transform: translateX(0%);
     transition: transform 0.5s ease-in;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(10px,6px);
+    transition: transform 0.5s ease-in ;
+}
+
+.toggle .line2{
+    opacity:0;
+   }
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-30px,-3px) ; 
+    transition: transform 0.5s ease-in ;
+}
+
+/*Landing page*/
+
+.landing-text-content{
+    position: absolute;
+    width:100%;
+    top:30%;
+    left:10%;
+    
+}
+
+
+.landing-text-content #designation{
+    font-size: 1.5rem;
+    margin-bottom:70px;
+    font-weight: 400;
+}
+
+.landing-text-content #intro,#name{
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+
+
+
+.line-under-name{
+    width:80vw;
+    height:5px;
+    background-color: #F33F6A;
+}
+
+.social{
+    padding-top:10%;
+    min-height: 20%;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.social div {
+    padding: 30px;
+    display: block;
+    justify-content: center;
+}
+
+.social div span{
+    font-size: 1.6rem;
+}
+
+.social div i{
+    font-size: 3.2rem;
+}
+
+/*About Me*/
+
+.about-me-desc {
+    width:80%;
+    left:10%;
+}
+
+.about-me-desc h1 {
+    font-size:3rem;
+}
+
+.about-me-desc p {
+    font-size:1rem;
+}
+
+/* My Wall*/
+
+.heading{
+
+    width:100vw;
+    height: 200px;
+    position: relative;
+}
+
+.heading h2 {
+    position:absolute;
+    font-weight:700;
+    font-size: 1.5rem;
+    bottom: 0;
+    left:10%;
+}
+
+.my-wall-content {
+    width:100vw;
+    height:80vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.experience{
+    position: relative;
+}
+
+.experience svg {
+    width:100%;
+    height:100%;
+}
+.experience-timeline {
+    position:absolute;
+}
+.skills{
+    position: relative;
+    width:auto;
+    top:10%;
+}
+
+.skills svg {
+    
+    width:100%;
+    height:100%;
+}
+.better-developer{
+    font-size: 0.8rem;
+    left:10%;
+    position: absolute;
+    bottom:2%;
+}
+.better-developer h2 {
+
+    font-weight: 700;
 }
 
 

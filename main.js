@@ -8,12 +8,11 @@ const navLinkList = document.querySelectorAll(".nav-links  li");
 
 // }
 
-console.log(navLinks,navLinkList)
 
 hamburger.addEventListener("click",function(){
 // Burger Animation
 
-// hamburger.classList.toggle('toggle');
+hamburger.classList.toggle('toggle');
 navLinks.classList.toggle('showNav');
 navLinkList.forEach((link,index)=>{
     if(link.style.animation){
