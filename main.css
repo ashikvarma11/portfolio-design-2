@@ -5,40 +5,119 @@
     font-weight: 300;
 
     position: relative;
-    color:#9395A9;
+    color:#F1F1F1;
 }
 
 html,body{
 
+   width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
-    width: 100%;
-
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
-.landing{
+
+/*h1,h2,p:hover{
+    color:ghostwhite !important;
+}*/
+
+/*Swup Animations */
+
+
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  /*opacity: 0;*/
+  transform:translateX(100%);
+}
+
+
+/*End of Swup Animations*/
+
+
+main{
+    width:100vw;
     min-height:100vh;
-    max-width: 100% !important;
-    background-image: linear-gradient(90deg, rgba(27, 26, 60, 0.9) 0%, rgba(27, 26, 60, 0.7) 103.95%), url(images/arnold-francisca-nPhl2x4fk2s-unsplash.jpg);
-    background-attachment: fixed;
+    background-image: url(images/background.svg);
+
+}
+
+.landing {
+    min-height:100vh;
+    position: absolute;
+    width: 100% !important;
+    /*background-attachment: fixed;*/
     background-size: cover;
+
     background-position: center;
 
 }
 
-.logo span{
+.logo span a{
     font-family: 'Sacramento', cursive;
     font-size:2.5rem;
+    text-decoration: none;
 }
+
+
+
+
 nav{
+
     display: flex;
     padding: 2vmin;
     align-items: center;
+    width:100%;
     padding-top:2%;
     justify-content: space-around;
-    min-height: 20%;
-    color: ghostwhite;
+    position: fixed;
+    z-index: 10;
 }
+
+
+
+
+.three-dots {
+    position: fixed;
+    left:5%;
+    margin-top:50vmin;
+    z-index: 12;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100px;
+    width:30px;
+
+}
+
+.dot1,.dot2,.dot3 {
+    width:10px;
+    height:10px;
+    background-color: ghostwhite;
+    border-radius: 50%;
+}
+
+
+.landing-page-svg{
+    position: absolute;
+    margin-top:15%;
+    left:20%;
+    z-index: 7;
+    
+}
+
+.landing-page-svg svg:nth-child(1){
+    stroke-dasharray: 40px;
+    animation: landingAnim 5s ease-in forwards,fadeIn 5s ease-in forwards;
+}
+
+
+
+
 
 .nav-links{
     display: flex;
@@ -48,9 +127,14 @@ nav{
     list-style: none;
 }
 
-.nav-links li {
-     font-weight: 400;
+.nav-links li a{
+     font-weight: 500;
      cursor: pointer;
+     text-decoration: none;
+}
+
+.nav-links li a:hover,.logo span a:hover{
+    color:#FF4A8B !important;
 }
 
 .landing-text-content{
@@ -77,7 +161,7 @@ nav{
 .line-under-name{
     width:280px;
     height:5px;
-    background-color: #F33F6A;
+    background-color: #FF4A8B;
 }
 
 .social{
@@ -97,7 +181,7 @@ nav{
 .social div span{
     font-size: 1.3rem;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
     text-align: center;
 }
 
@@ -108,10 +192,8 @@ nav{
 .my-wall {
     min-height:100vh;
     width: 100%;
-    background-image: linear-gradient(90deg, rgba(27, 26, 60, 0.86) 0%, rgba(27, 26, 60, 0.86) 103.95%), url(images/bench-accounting-nvzvOPQW0gc-unsplash.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    position: absolute;
+    /*background-attachment: fixed;*/
 }
 
 .heading{
@@ -154,6 +236,12 @@ nav{
     height:70%;
 }
 
+.skills svg:nth-child(1){
+    stroke-dasharray: 100px;
+    animation: lineAnim 4s ease-in forwards;
+    
+}
+
 .better-developer{
     font-size: 0.8rem;
     left:10%;
@@ -168,16 +256,15 @@ nav{
 .about-me {
     min-height:100vh;
     width: 100%;
-    position: relative;
-    background-image: linear-gradient(90deg, rgba(27, 26, 60, 9) 0%, rgba(27, 26, 60, 9) 103.95%), url(images/bench-accounting-nvzvOPQW0gc-unsplash.jpg);
-    background-attachment: fixed;
+    position: absolute;
+    /*background-attachment: fixed;*/
     background-size: cover;
     background-position: center;
 }
 
 .about-me-desc {
     width:40%;
-    top:7%;
+    top:20%;
     position: absolute;
     left:30%;
 }
@@ -194,6 +281,51 @@ nav{
     word-wrap: break-word;
 }
 
+#linkedinLink {
+    color:#FF4A8B;
+    text-decoration: none;
+    font-weight: 400;
+}
+/* Animations */
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        fill:none;
+    }
+    90%{
+        fill: none;
+    }
+    100%{
+        opacity: 1;
+        fill:#FF4A8B;
+    }
+}
+
+@keyframes landingAnim {
+0%{
+}
+50%{
+
+}
+100%{
+    stroke-dasharray: 1000px;
+}
+
+}
+
+
+@keyframes lineAnim{
+from{
+    opacity: 1;
+}
+to{
+    opacity: 1;
+    stroke-dasharray: 700px;
+}
+
+}
 
 /* Responsive Navbar*/
 @media (max-width:900px){
@@ -201,9 +333,24 @@ nav{
     overflow-x: hidden;
     }
 
+.logo span a{
+    font-family: 'Sacramento', cursive;
+    font-size:1.5rem !important;
+}
 
-    .hamburger {
+.heading{
+    display: none;
+
+}
+
+.about-me,.my-wall{
+    margin-top:10%;
+}
+
+
+.hamburger {
     padding: 10px;
+    /*left:30%;*/
     min-height:30px;
     display: flex;
     cursor: pointer;
@@ -240,6 +387,7 @@ nav{
     transition: transform 0.5s ease-in ;
 }
 
+
 .nav-links {
         position: absolute;
         right:0;
@@ -271,6 +419,8 @@ nav{
 }
 
 
+
+
 }
 
 
@@ -278,14 +428,13 @@ nav{
 
 /*Smartphones*/
 
-@media only screen and (min-width: 320px) and (max-width: 479px) and (max-height: 700px){
+@media only screen and (min-width: 320px) and (max-width: 479px) and (max-height: 850px){
 
 
 
 
 
 /*Landing page*/
-
 
 
 .landing-text-content{
@@ -311,9 +460,9 @@ nav{
 
 
 .line-under-name{
-    width:80%;
+    width:75%;
     height:5px;
-    background-color: #F33F6A;
+    background-color: #FF4A8B;
 }
 
 .social{
@@ -413,6 +562,7 @@ nav{
 /*High end smartphones*/
 @media only screen and (min-width: 410px) and (max-width: 767px){ 
 
+
 /*Landing page*/
 
 
@@ -440,9 +590,9 @@ nav{
 
 
 .line-under-name{
-    width:80%;
+    width:70%;
     height:5px;
-    background-color: #F33F6A;
+    background-color: #FF4A8B;
 }
 
 .social{
@@ -568,9 +718,9 @@ nav{
 
 
 .line-under-name{
-    width:80%;
+    width:50%;
     height:5px;
-    background-color: #F33F6A;
+    background-color: #FF4A8B;
 }
 
 .social{
