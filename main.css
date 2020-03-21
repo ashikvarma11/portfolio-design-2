@@ -31,7 +31,7 @@ html,body{
 }
 
 html.is-animating .transition-fade {
-  /*opacity: 0;*/
+  opacity: 0;
   transform:translateX(100%);
 }
 
@@ -106,7 +106,8 @@ nav{
     position: absolute;
     margin-top:15%;
     left:20%;
-    z-index: 7;
+    opacity:0.9;
+    z-index: 0;
     
 }
 
@@ -117,6 +118,19 @@ nav{
 
 
 
+#box1,#box2 {
+    position: absolute;
+    z-index:22;
+    animation: rotationAnim 4s ease-in infinite;
+}
+
+@keyframes rotationAnim{
+    100%{
+       transform:rotate(360deg);
+       transform-box: fill-box;
+       transform-origin: 50% 50% ;
+    }
+}
 
 
 .nav-links{
@@ -148,7 +162,7 @@ nav{
 .landing-text-content #designation{
     font-size: 2rem;
     margin-bottom:70px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .landing-text-content #intro,#name{
@@ -343,6 +357,12 @@ to{
 
 }
 
+
+
+.landing-page-svg {
+    display: none;
+}
+
 .about-me,.my-wall{
     margin-top:10%;
 }
@@ -359,9 +379,9 @@ to{
 }
 
 .hamburger div {
-    width:31px;
+    width:20px;
     height:3px;
-    background-color: #9395A9;
+    background-color: #F1F1F1;
 }
 
 .line2 {
@@ -374,7 +394,7 @@ to{
 }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(10px,6px);
+    transform: rotate(-45deg) translate(0px,3px);
     transition: transform 0.5s ease-in ;
 }
 
@@ -383,7 +403,7 @@ to{
    }
 
 .toggle .line3{
-    transform: rotate(45deg) translate(-30px,-3px) ; 
+    transform: rotate(45deg) translate(-25px,0px) ; 
     transition: transform 0.5s ease-in ;
 }
 
