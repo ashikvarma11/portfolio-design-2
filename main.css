@@ -148,7 +148,7 @@ nav{
 }
 
 .nav-links li a:hover,.logo span a:hover{
-    color:#FF4A8B !important;
+    color:#F49F1C !important;
 }
 
 .landing-text-content{
@@ -175,7 +175,7 @@ nav{
 .line-under-name{
     width:280px;
     height:5px;
-    background-color: #FF4A8B;
+    background-color: #F49F1C;
 }
 
 .social{
@@ -296,7 +296,7 @@ nav{
 }
 
 #linkedinLink {
-    color:#FF4A8B;
+    color:#F49F1C;
     text-decoration: none;
     font-weight: 400;
 }
@@ -313,7 +313,7 @@ nav{
     }
     100%{
         opacity: 1;
-        fill:#FF4A8B;
+        fill:#F49F1C;
     }
 }
 
@@ -482,7 +482,7 @@ to{
 .line-under-name{
     width:75%;
     height:5px;
-    background-color: #FF4A8B;
+    background-color: #F49F1C;
 }
 
 .social{
@@ -612,7 +612,7 @@ to{
 .line-under-name{
     width:70%;
     height:5px;
-    background-color: #FF4A8B;
+    background-color: #F49F1C;
 }
 
 .social{
@@ -740,7 +740,7 @@ to{
 .line-under-name{
     width:50%;
     height:5px;
-    background-color: #FF4A8B;
+    background-color: #F49F1C;
 }
 
 .social{
