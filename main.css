@@ -300,6 +300,58 @@ nav{
     text-decoration: none;
     font-weight: 400;
 }
+
+.contact-form {
+
+    width:100%;
+    margin: 40px 0;
+    height:auto;
+    border: 1.2px solid white;
+    border-radius: 5px;
+}
+
+
+.contact-form>form{
+    padding:30px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.input-label {
+    font-weight:400;
+}
+.text-input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  color:#F49F1C;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+#message{
+    height:100px;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #F49F1C;
+  color: white ;
+  font-weight: 700;
+  padding: 14px 20px;
+  font-family: 'Work Sans', sans-serif;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
 /* Animations */
 
 
@@ -363,7 +415,7 @@ to{
     display: none;
 }
 
-.about-me,.my-wall{
+.my-wall{
     margin-top:10%;
 }
 
@@ -563,14 +615,13 @@ to{
 }
 .skills{
     position: relative;
-    width:auto;
+    width:100%;
     top:15%;
-    left:20%;
 }
 
 .skills svg {
     
-    width:50%;
+    width:90%;
     height:50%;
 }
 .better-developer{
@@ -693,14 +744,13 @@ to{
 }
 .skills{
     position: relative;
-    width:auto;
+    width:100%;
     top:15%;
-    left:20%;
 }
 
 .skills svg {
     
-    width:50%;
+    width:90%;
     height:50%;
 }
 .better-developer{
@@ -821,14 +871,13 @@ to{
 }
 .skills{
     position: relative;
-    width:auto;
+    width:100%;
     top:15%;
-    left:20%;
 }
 
 .skills svg {
     
-    width:50%;
+    width:90%;
     height:50%;
 }
 .better-developer{

@@ -21,7 +21,7 @@
         </div> -->
         <nav class="navbar">
             <div class="logo">
-                <span><a href="/portfolio-design-2/index.html">ashik varma</a></span>
+                <span><a href="/index.html">ashik varma</a></span>
             </div>
             <ul class="nav-links">
                 <li><a href="/portfolio-design-2/mywall.html">MY WALL</a></li>
@@ -41,9 +41,28 @@
 	            </div>
 	            <div class="about-me-desc">
 	                <p>
-                        I'm interested in building clean, elegant websites / web applications. Contact me via Linkedin.
+                        I'm interested in building clean, elegant websites / web applications. Contact me via form below.
 	                </p>
                     <p> Click here to go to my <a id="linkedinLink" href="https://www.linkedin.com/in/ashik-varma-a-49837a142">Linkedin Page</a>.</p>
+
+                    <!-- modify this form HTML and place wherever you want your form -->
+                    <div class="contact-form">
+                    <form
+                      action="https://formspree.io/mrgykyol"
+                      method="POST">
+                      <label for="email" class="input-label">
+                        Your email
+                      </label>
+                       <input type="text" id="email" class="text-input" name="_replyto">
+                      <label class="input-label" for="message">
+                        Your message
+                      </label>
+                        <textarea name="message" id="message"  class="text-input"></textarea>
+                      <!-- your other form fields go here -->
+
+                      <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
 	            </div>
 	        </div>
         </div>
