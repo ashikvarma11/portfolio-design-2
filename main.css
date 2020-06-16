@@ -532,12 +532,11 @@ to{
 
 
 .line-under-name{
-    width:75%;
-    height:5px;
-    background-color: #F49F1C;
+    display: none;
 }
 
 .social{
+    margin:0 auto;
     padding-top:10%;
     min-height: 20%;
     display: flex;
@@ -547,12 +546,15 @@ to{
 }
 
 .social div {
-    padding: 30px;
+   /* padding: 30px;
+
+    padding-bottom: 10px;*/
     display: block;
     justify-content: center;
 }
 
 .social div span{
+    margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
@@ -565,6 +567,7 @@ to{
 .about-me-desc {
     width:80%;
     left:10%;
+    top:10%;
 }
 
 .about-me-desc h1 {
