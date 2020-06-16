@@ -42,6 +42,7 @@ html.is-animating .transition-fade {
 main{
     width:100vw;
     min-height:100vh;
+    position: fixed;
     background-image: url(images/background.svg);
 
 }
