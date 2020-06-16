@@ -44,3 +44,4 @@ navLinkList.forEach((link,index)=>{
 }
 
 navbarTransition();
+

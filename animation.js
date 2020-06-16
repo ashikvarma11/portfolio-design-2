@@ -1,48 +1,10 @@
-$( window ).ready(function() {
-  
-  var pageTransition = { 'dot1':'#aboutMe',
-'dot2':'#myWall'}
-
-  $(window).scroll(function() {
-	    var height = $(window).scrollTop();
-	    if(height  > 150) {
-	       $('.navbar').css({
-	       	"background-color":'#0d0c1c',
-	       	"transition": "background-color 0.5s ease-in"
-	       });
-	    } else {
-	    	$('.navbar').css({
-	       	"background":'rgba(76, 175, 80, 0)',
-	       	"transition": "background 0.5s ease-out"
-	       });
-	    }
 
 
-
-	});
-
-
-  	// $('.nav-links li a').click((event)=>{
-  	// 	event.preventDefault();
-
-  	// 	$('html, body').animate({ scrollTop: $(event.target.hash).offset().top-80}, 1000);
-
-  	// 	 // Animation on skills
-
-  	// 	 $('svg').animate({
-  		 	
-  	// 	 })
-  	// });
-
-  	$('.three-dots div').click((event)=>{
-  		console.log(event)
-  		 $('body').scrollLeft(300);
-  		// $('html, body').animate({ scrollRight:`${currPos} + 3000`}, 1000);
-	});
-	// dots.forEach((dot,index)=>{
-	// 	    // transform: translateX(100%);
-	//     // transition: transform 1s ease-in;
-	// })
-
-
+document.body.addEventListener('scroll',()=>{
+	console.log(document.body.scrollTop )
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    document.getElementById("nav").style.backgroundColor = "#111230";
+  } else {
+    document.getElementById("nav").style.backgroundColor = "transparent";
+  }
 });
