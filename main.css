@@ -42,9 +42,14 @@ html.is-animating .transition-fade {
 main{
     width:100vw;
     min-height:100vh;
-    position: fixed;
-    background-image: url(images/background.svg);
+   
 
+}
+body{
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(images/background.svg);
 }
 
 .landing {
@@ -889,4 +894,12 @@ to{
 }
 }
 
-@media only screen and (min-width: 992px){ ... }
+@media only screen and (max-height: 640px){ 
+
+
+body{
+
+    overflow-y: scroll;
+ 
+}
+}
