@@ -13,12 +13,20 @@
 </head>
 
 <body>
-    <main >
+    <div class="container" >
        <!--  <div class="three-dots">
             <div class="dot1"></div>
             <div class="dot2"></div>
             <div class="dot3"></div>
         </div> -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="/mywall.html" onclick="closeNav()">MY WALL</a>
+            <a href="/about.html" onclick="closeNav()">ABOUT</a>
+            <a href="/contact.html" onclick="closeNav()">CONTACT</a>
+          </div>
+        </div>
         <nav class="navbar" id="nav">
             <div class="logo">
                 <span><a href="/index.html">ashik varma</a></span>
@@ -28,7 +36,7 @@
                 <li><a href="/about.html">ABOUT</a></li>
                 <li><a href="/contact.html">CONTACT</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger" onclick="openNav()">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -60,8 +68,7 @@
                 <div class="landing-text-content">
                     <p id="designation">WEB DEVELOPER</p>
                     <p id="intro"> Hi, I am</p>
-                    <p id="name">Ashik Varma</p>
-                    <div class="line-under-name"></div>
+                    <p id="name"><span class="fname">Ashik</span> Varma</p>
                     <div class="social">
                         <div><i class="fab fa-instagram"></i> <span>varma_ashik</span> </div>
                         <div><i class="far fa-envelope"></i> <span>varmaashik@gmail.com</span> </div>
@@ -70,7 +77,7 @@
             </div>
         </div>    
 
-    </main>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="swup-master/dist/swup.min.js"></script>
     <script src="https://kit.fontawesome.com/55d1eced80.js" crossorigin="anonymous"></script>

@@ -17,25 +17,26 @@ hamburger.addEventListener("click",function(){
 
 hamburger.classList.toggle('toggle');
 navLinks.classList.toggle('showNav');
-navLinkList.forEach((link,index)=>{
-    if(link.style.animation){
-        link.style.animation='';
+
+// navLinkList.forEach((link,index)=>{
+//     if(link.style.animation){
+//         link.style.animation='';
     
-    }
-    else {
-        link.style.animation = `navLinkFade 1.5s ease forwards`
-    }
-});
-});
-
-
-navLinkList.forEach((link,index)=>{
- link.addEventListener("click",(event)=>{
- 	hamburger.classList.toggle('toggle');
-	navLinks.classList.toggle('showNav');
+//     }
+//     else {
+//         link.style.animation = `navLinkFade 1.5s ease forwards`
+//     }
+// });
 });
 
-});
+
+// navLinkList.forEach((link,index)=>{
+//  link.addEventListener("click",(event)=>{
+//  	hamburger.classList.toggle('toggle');
+// 	navLinks.classList.toggle('showNav');
+// });
+
+// });
 
 
 

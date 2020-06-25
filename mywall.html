@@ -19,16 +19,24 @@
             <div class="dot2"></div>
             <div class="dot3"></div>
         </div> -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="/mywall.html" onclick="closeNav()">MY WALL</a>
+            <a href="/about.html" onclick="closeNav()">ABOUT</a>
+            <a href="/contact.html" onclick="closeNav()">CONTACT</a>
+          </div>
+        </div>
         <nav class="navbar" id="nav">
             <div class="logo">
-                <span> <a href="/index.html">ashik varma</a></span>
+                <span> <a href="/">ashik varma</a></span>
             </div>
             <ul class="nav-links">
                 <li><a href="/mywall.html">MY WALL</a></li>
                 <li><a href="/about.html">ABOUT</a></li>
                 <li><a href="/contact.html">CONTACT</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger" onclick="openNav()">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -59,7 +67,7 @@
                     </div>
                     <div class="skills">
                         <div class="current-skills">
-                            <svg width="600" height="600" viewBox="0 0 201 393" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="500" height="500" viewBox="0 0 201 393" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-inside-1" fill="white">
                                     <path d="M98.1696 0.0270221C120.5 -0.49091 142.366 6.44489 160.316 19.739C178.265 33.0332 191.274 51.928 197.288 73.4393C203.303 94.9507 201.979 117.853 193.527 138.528C185.076 159.204 169.977 176.474 150.616 187.613C131.255 198.751 108.735 203.122 86.6132 200.036C64.4912 196.95 44.0277 186.582 28.4547 170.569C12.8816 154.557 3.08657 133.813 0.616435 111.614C-1.85369 89.4148 3.1419 67.0252 14.8142 47.9814L18.5315 50.2598C7.3655 68.4774 2.58663 89.8957 4.9496 111.132C7.31257 132.368 16.6827 152.212 31.5802 167.53C46.4776 182.847 66.0533 192.765 87.2157 195.718C108.378 198.67 129.921 194.489 148.442 183.834C166.963 173.178 181.407 156.657 189.492 136.878C197.577 117.1 198.843 95.1914 193.089 74.6133C187.336 54.0351 174.891 35.96 157.721 23.2426C140.55 10.5252 119.632 3.8903 98.2707 4.38576L98.1696 0.0270221Z" />
                                 </mask>
@@ -108,9 +116,6 @@
                                 </defs>
                             </svg>
                         </div>
-                    </div>
-                    <div class="better-developer">
-                        <h2>BEING A BETTER DEVELOPER</h2>
                     </div>
                 </div>
             </div>
