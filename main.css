@@ -635,13 +635,21 @@ to{
 
 .experience-timeline{
     margin-right:0;
-    width:75%;
+    width:90%;
 } 
 
 .nav-links{
     font-size:1.2rem;
 }
 
+.hamburger{
+  min-height: 20px;
+}
+
+.hamburger div {
+  width:15px;
+  height:2px;
+}
 }
 
 
