@@ -597,10 +597,11 @@ to{
 
 /*About Me*/
 
+.about-me{
+  margin-top:1em;
+}
 .about-me-desc {
-    width:80%;
-    left:10%;
-    top:10%;
+    width:90%;
 }
 
 .about-me-desc h1 {
