@@ -599,14 +599,18 @@ to{
     letter-spacing: 10px;
 }
 
+.fname{
+border-bottom: 2px solid #F49F1C;
+}
  
  .social{
     flex-direction: column;
+    padding:0;
  }
  .social div {
 
     justify-content: flex-start;
-    margin: 2em 0;
+    margin: 1em 0;
  }
 
  .social div i {
