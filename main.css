@@ -8,6 +8,8 @@
 body{
        background: rgb(27,26,60);
     background: radial-gradient(circle, rgba(27,26,60,1) 0%, rgba(10,13,25,1) 100%);
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 .overlay {
@@ -429,7 +431,7 @@ to{
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
-  right: 35px;
+  right: 65px;
 }
 .heading{
     display: none;
@@ -562,12 +564,17 @@ to{
 
 
 
-
+.navbar{
+ justify-content: flex-end; 
+}
 
 /*Landing page*/
 
 
 
+.logo{
+  display: none;
+}
 .logo span a{
     font-size: 1rem;
 }
@@ -604,7 +611,7 @@ to{
 /*About Me*/
 
 .about-me{
-  margin-top:1em;
+  margin-top:0;
 }
 .about-me-desc {
     width:90%;
@@ -659,6 +666,7 @@ to{
 
 .hamburger{
   min-height: 20px;
+  margin-right:2em;
 }
 
 .hamburger div {
