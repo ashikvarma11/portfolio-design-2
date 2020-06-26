@@ -25,7 +25,7 @@ body{
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 10%;
   width: 100%;
   text-align: center;
   margin:0 auto;
@@ -569,15 +569,19 @@ to{
 
 
 .logo span a{
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
+.landing{
+  margin:0;
+}
 .landing-text-content #designation{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .landing-text-content #intro,#name{
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     letter-spacing: 10px;
 }
 
@@ -592,9 +596,11 @@ to{
  }
 
  .social div i {
-    font-size:2rem;
+    font-size:1.5rem;
  }
-
+ .social div span {
+    font-size:1rem;
+ }
 /*About Me*/
 
 .about-me{
@@ -605,11 +611,11 @@ to{
 }
 
 .about-me-desc h1 {
-    font-size:3rem;
+    font-size:2.3rem;
 }
 
 .about-me-desc p {
-    font-size:0.99rem;
+    font-size:0.8rem;
 }
 
 /* My Wall*/
@@ -629,15 +635,24 @@ to{
     left:10%;
 }
 
+.my-wall{
+  margin-top: 0;
+}
 .my-wall-content {    
     flex-direction: column;
 }
 
 .experience-timeline{
     margin-right:0;
+    height:250px;
     width:90%;
+    margin-bottom: 1em;
 } 
 
+.skills svg:nth-child(1){
+  height:250px;
+
+}
 .nav-links{
     font-size:1.2rem;
 }
@@ -654,5 +669,7 @@ to{
 
 
 @media (max-width:400px){
+
+
 
 }
