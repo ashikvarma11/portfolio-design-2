@@ -295,6 +295,42 @@ border:none;
 }
 
 
+.projects-grid{
+    display: flex;
+    margin:3em;
+    justify-content: space-evenly;
+    
+}
+
+.project{
+    margin:0 12em;
+    width:100%;
+    height:70%;
+    overflow: hidden; 
+    
+}
+.project img{
+    width:100%;
+    display:center center;
+    border-radius: 1em;
+}
+
+.project .img-link{
+    height:300px;
+    display:center center;
+    border-radius: 1em;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.7s ease;
+    background-image: url('./images/pjt2.png');
+}
+.img-link:hover{
+ transform: scale(1.3) rotate(3deg);
+}
+
+
+/* About Me Page */
+
 
 .about-me {
     min-height:100vh;
@@ -451,6 +487,17 @@ to{
         margin:auto;
     }
 
+
+    .projects-grid{
+        flex-direction: column;
+    }
+    .project{
+        margin:2em 8em;
+        width:70%;
+        height:70%;
+        overflow: hidden; 
+        
+    }
     .about-me-desc{
         width:65%;
         margin:0 auto;
@@ -588,6 +635,12 @@ to{
     font-size:3rem;
  }
 
+
+.project{
+    margin:2em 4em;
+    
+}
+
  .about-me-desc h1 {
     font-size: 4rem;
  }
@@ -688,6 +741,20 @@ border:none;
  .social div span {
     font-size:1rem;
  }
+
+
+.project{
+    margin:2em 3em;
+    width:70%;
+    height:40%;
+    overflow: hidden; 
+    
+}
+.project .img-link{
+    height:200px;
+}
+
+
 /*About Me*/
 
 .about-me{
