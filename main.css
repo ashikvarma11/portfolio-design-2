@@ -550,7 +550,9 @@ to{
 
 /* Responsive Navbar*/
 @media (max-width:900px){
-
+html,body{
+    overflow-x: hidden;
+}
  .overlay a {font-size: 20px}
   .overlay .closebtn {
         font-size: 3rem;
@@ -605,43 +607,7 @@ to{
     margin-left:100%;
 }
 
-/*.toggle .line1{
-    transform: rotate(-45deg) translate(0px,3px);
-    transition: transform 0.5s ease-in ;
-}
 
-.toggle .line2{
-    opacity:0;
-   }
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-25px,0px) ; 
-    transition: transform 0.5s ease-in ;
-}
-*/
-
-/*.nav-links {
-        position: absolute;
-        right:0;
-        width:100%;
-        height:100%;
-        position: fixed;
-        background-color: rgb(27, 26, 60);
-        display: flex;
-        font-size: 1.6rem;
-        flex-direction: column;
-        justify-content: space-evenly;
-        z-index:2;
-        
-        align-items: center;
-        transform: translateX(100%);
-        -webkit-transition:transform 0.5s ease-in;
-        -moz-transition:transform 0.5s ease-in;
-        -o-transition:transform 0.5s ease-in;
-        transition:transform 0.5s ease-in;
-        
-}
-*/
 .nav-links{
   display: none;
 }
@@ -701,10 +667,13 @@ to{
 
 
 .navbar{
- justify-content: space-between; 
+ justify-content: space-between;
+ 
 }
 
-
+nav{
+    padding:1.5em 0.1em; 
+}
 
 /*Landing page*/
 
