@@ -151,10 +151,47 @@ nav{
     
 }
 
+
+
+
+#hi{
+    border: 2px solid #F49F1C;
+    padding:0.3em;
+    box-sizing: border-box;
+}
 .fname{
-    border-bottom:5px solid #F49F1C;
+border:none;
+}
+.lname{
+    border: 2px solid #42CFAD;
+    padding:0.3em;
 }
 
+.contact-me-btn{
+    border: 2px solid #42CFAD;
+    width:30%;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 5px;
+    margin:4em 0;
+    background-color: none;
+}
+
+.contact-me-btn a{
+    color : #42CFAD;
+    font-weight: 500;
+    text-decoration:none;
+
+}
+
+.contact-me-btn:hover{
+    color:#f1f1f1;
+    cursor: pointer;
+    background-color: #42CFAD;
+}
+#contact-me-btn:hover #contact-me-link{
+    color:#f1f1f1;
+}
 .landing-text-content #designation{
     font-size: 2rem;
     margin-bottom:70px;
@@ -221,7 +258,7 @@ nav{
 }
 
 .nav-links li a:hover,.logo span a:hover{
-    color:#F49F1C !important;
+    color:#42CFAD !important;
 }
 
 
@@ -247,6 +284,7 @@ nav{
 .my-wall-content {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 6em;
 }
 
 
@@ -283,7 +321,7 @@ nav{
 }
 
 #linkedinLink {
-    color:#F49F1C;
+    color:#42CFAD;
     text-decoration: none;
     font-weight: 400;
 }
@@ -311,9 +349,9 @@ nav{
 .text-input{
   width: 100%;
   padding: 12px 20px;
-  margin: 10px 0;
-  color:#F49F1C;
-  font-size: 1.2rem;
+  margin: 1.2em 0;
+  color:#42CFAD;
+  font-size: 0.8rem;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -327,7 +365,7 @@ nav{
 
 .submit-btn {
   width: 100%;
-  background-color: #F49F1C;
+  background-color: #42CFAD;
   color: white ;
   font-weight: 700;
   padding: 14px 20px;
@@ -352,7 +390,7 @@ nav{
     }
     100%{
         opacity: 1;
-        fill:#F49F1C;
+        fill:#42CFAD;
     }
 }
 
@@ -584,25 +622,56 @@ to{
 }
 .logo span a{
     font-size: 1.4rem;
+    color:#42CFAD;
 }
 
 .landing{
   margin:0;
 }
 .landing-text-content #designation{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0;
+    font-weight:300;
 }
 
 .landing-text-content #intro,#name{
-    font-size: 1.7rem;
-    letter-spacing: 10px;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    font-weight:300;
+    line-height: 1.2em;
+    
 }
 
+
 .fname{
-border-bottom: 2px solid #F49F1C;
+border:none;
 }
- 
+.lname{
+    border: 2px solid #42CFAD;
+    padding:0.3em;
+}
+
+.contact-me-btn{
+    width:40%;
+    padding: 0.3em 0.3em;
+}
+.contact-me-btn a{
+    color : #42CFAD;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration:none;
+
+}
+
+.contact-me-btn:hover{
+    background-color: #42CFAD;
+}
+
+#contact-me-btn:hover #contact-me-link{
+    color:#f1f1f1;
+}
+
+
  .social{
     flex-direction: column;
     padding:0;
@@ -651,13 +720,16 @@ border-bottom: 2px solid #F49F1C;
 }
 .my-wall-content {    
     flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 6em;
 }
 
 .experience-timeline{
-    margin-right:0;
-    height:250px;
-    width:90%;
-    margin-bottom: 1em;
+    margin-left:5em;
+    height:100%;
+    width:100%;
+    margin-top:2em;
+    margin-bottom: 6em;
 } 
 
 .skills svg:nth-child(1){
