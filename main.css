@@ -260,8 +260,11 @@ border:none;
 
 
 .my-wall {
-    /*min-height:100vh;*/
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .heading{
@@ -301,6 +304,7 @@ border:none;
     margin:0 12em;
     width:100%;
     height:70%;
+    border: 5px solid #f1f1f1;
     overflow: hidden; 
     
 }
@@ -338,7 +342,7 @@ border:none;
 }
 
 .about-me-desc h1 {
-    font-size:5rem;
+    font-size:4rem;
     padding:0;
     margin:0.2em 0;
 }
@@ -731,22 +735,6 @@ border:none;
 }
 
 
- .social{
-    flex-direction: column;
-    padding:0;
- }
- .social div {
-
-    justify-content: flex-start;
-    margin: 1em 0;
- }
-
- .social div i {
-    font-size:1.5rem;
- }
- .social div span {
-    font-size:1rem;
- }
 
 
 .project{
@@ -768,13 +756,16 @@ border:none;
 }
 .about-me-desc {
     width:90%;
+    margin-top:4em;
 }
 
 .about-me-desc h1 {
     font-size:2.3rem;
+    font-weight: 500;
 }
 
 .about-me-desc p {
+    margin-top:3em;
     font-size:0.8rem;
 }
 
