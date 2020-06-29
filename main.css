@@ -344,12 +344,13 @@ border:none;
 .about-me-desc h1 {
     font-size:4rem;
     padding:0;
+    font-weight: 500;
     margin:0.2em 0;
 }
 
 .about-me-desc p {    
     font-weight: 400;
-    margin: 0;
+    margin-top:2em;
     font-size:1.4rem;
     line-height: 2;
     word-wrap: break-word;
