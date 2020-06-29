@@ -356,6 +356,11 @@ border:none;
     word-wrap: break-word;
 }
 
+#years,#expertise{
+    color:#42CFAD;
+    font-weight:bold;
+}
+
 #linkedinLink {
     color:#42CFAD;
     text-decoration: none;
